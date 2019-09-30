@@ -5,8 +5,14 @@
     "license": "MIT",
     "require": {
         "ext-redis": "*",
-        "flowpack/jobqueue-common": "^3.0 || dev-master"
+        "flowpack/jobqueue-common": "@dev"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/batabana/jobqueue-common"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Flowpack\\JobQueue\\Redis\\": "Classes"
